@@ -14,7 +14,7 @@ hhpc_df2 <- filter(hhpc_df, Date =="2007-02-02" | Date =="2007-02-01")
 
 #Plotting to file plot3.png #################################################
 
-png(filename = "plot3.png",  width = 480, height = 480, bg = "transparent", units = "px")
+png(filename = "plot3.png",  width = 480, height = 480, units = "px")
 with(hhpc_df2, plot(Time,Sub_metering_1, type="l",ylab="Energy sub metering", xlab="")  )
 with(hhpc_df2, points(Time,Sub_metering_2, type="l", col="red"))
 with(hhpc_df2, points(Time,Sub_metering_3, type="l", col="blue"))
