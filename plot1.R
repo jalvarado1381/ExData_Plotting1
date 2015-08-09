@@ -16,7 +16,6 @@ hhpc_df2 <- filter(hhpc_df, Date =="2007-02-02" | Date =="2007-02-01")
 # plotting to file plot1.png ################################################
 
 png(filename = "plot1.png", width = 480, height = 480, units = "px")
-#par()
 hist(hhpc_df2$Global_active_power, col="red", main ="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()
 
