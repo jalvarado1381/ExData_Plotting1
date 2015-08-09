@@ -14,7 +14,7 @@ hhpc_df2 <- filter(hhpc_df, Date == "2007-02-02" | Date == "2007-02-01")
 
 #### Plotting to file plot4.png #################################################
 
-png(filename = "plot4.png",  width = 480, height = 480, units = "px")
+png(filename = "plot4.png",  width = 480, height = 480, bg = "transparent", units = "px")
 
 par(mfrow = c(2,2))
 
